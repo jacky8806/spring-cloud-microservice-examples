@@ -1,0 +1,13 @@
+spring.zipkin.baseUrl: http://localhost:9966
+spring.zipkin.enabled: true
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+
+#service name
+service.name: cloud-thrift-server
+#zookeeper.server.list: localhost:2181
+zookeeper.server.list: 10.10.201.17:2181,10.10.202.144:2181,10.10.203.154:2181,10.10.204.90:2181,10.10.204.139:2181
+server:
+  port: 8071
